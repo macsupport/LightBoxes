@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="ui-widget-header ui-corner-all centered">
+  <h1><a href="http://www.jalbumskins.com">LightBoxes</a></h1>
+</div>
+<!-- <div id="gallery_header"></div> -->
+<div id="main_container">
+  <div id="loaderIcon"><img src="http://macosxsupport.com/lightbox/res/icons/load.gif"/></div>
+  <div id="styleSwitcher" class="ui-widget-header ui-corner-all">
+    <button id="switcher_btn"></button>
+    <div class="breadCrumbHolder module">
+      <div id="breadCrumb" class="breadCrumb module">
+        <ul>
+          <li><a href="index.html">LightBoxes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="gallery_head">
+      <h3>Gallery Settings</h3>
+    </div>
+    <br />
+   
+    <div id="sort">
+      <div id="options" class="sort option-set"> <span class="list">Sort Images Ascending</span><br />
+        <div class="sort asc option-set floated clearfix fg-buttonset fg-buttonset-single"> <a href="#original-order" class="selected list fg-button ui-state-default ui-priority-primary ui-corner-left">Reset</a> <a href="#name" class="list fg-button ui-state-default">Name</a> <a href="#imageWidth" class="list fg-button ui-state-default ui-priority-primary">Width</a> <a href="#imageHeight" class="list fg-button ui-state-default ui-priority-primary">Height</a> <a href="#date" class="list fg-button ui-state-default ui-priority-primary ui-corner-right">Date</a> </div>
+        <br />
+        <br />
+        <span class="list">Sort Images Descending</span><br />
+        <div class="sort dec option-set floated clearfix fg-buttonset fg-buttonset-single"> <a href="#original-order" class="selected list fg-button ui-state-default ui-priority-primary ui-corner-left">Reset</a> <a href="#name" class="list fg-button ui-state-default">Name</a> <a href="#imageWidth" class="list fg-button ui-state-default ui-priority-primary">Width</a> <a href="#imageHeight" class="list fg-button ui-state-default ui-priority-primary">Height</a> <a href="#date" class="list fg-button ui-state-default ui-priority-primary ui-corner-right">Date</a> </div>
+        <br />
+        <br />
+        <span class="list">Filter Images</span><br />
+        <div class="filters fg-buttonset fg-buttonset-single option-set floated clearfix"> <a href="#filter" class="selected fg-button ui-state-default ui-priority-primary ui-corner-left" data-filter="*">All</a> <a href="#filter" class="fg-button ui-state-default ui-priority-primary ui-priority-primary ui-corner-right" data-filter=".favorites">Favorites</a> </div>
+      </div>
+      <br />
+      <br />
+    </div>
+    <p>
+      <label for="amount">Change Gallery Size:</label>
+      <input type="text" id="amount" style="border:0; width: 70px; color:#f6931f; font-size:12px; font-weight:bold;" />
+    </p>
+    <br />
+    <div id="slider">
+      <div class='ui-slider-handle'></div>
+    </div>
+    <br />
+    <br />
+    <a href="#" id="toggleIcons" title="Click to Show Icons"></a> <br />
+    <br />
+    <a id="index" href="index.html" title="home">Home</a> <br />
+    <a id="information" href="#dialog"  title="Help" >Help</a> <a id="show_cart" href="#cart" title="Show/Hide Cart"></a> <br />
+    <br />
+    <br />
+    <a href="http://www.jalbumskins.com">LightBoxes Image Gallery</a><br />
+    &copy; 2011<br />
+    <br />
+    <div id="switcher"></div>
+  </div>
+  <div id="container" class="variable-sizes clearfix" >
+    <div class="item Filter1 ui-corner-all"> <a   href="http://placehold.it/350x150" title="1"><img src="http://placehold.it/90x90" class="border custom" width="90" height="60" alt="1" /> </a>
+      <div class="titles">
+        <ul class="icon">
+          <li class="ui-state-default ui-corner-all" title="Select as Favorite">
+            <div class="fav ui-icon ui-icon-heart"></div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="More Info">
+            <div class="description ui-icon ui-icon-extlink">
+              <div class="description_holder" style="display:none">1<br />
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Add to Cart">
+            <div class="cart_button ui-icon ui-icon-cart">
+              <div class="cart_holder" style="display:none">
+                <div class="simpleCart_shelfItem"> <span class="item_thumb"><img src='http://placehold.it/25x25' height='25px' width='25px'/></span>
+                  <h5 class="item_name">1</h5>
+                  <br />
+                  <span class="item_size">8.5 x 11</span><br />
+                  <span class="item_price">10.00</span><br />
+                  <input type="text" class="item_quantity" value="1" />
+                  <a href="#" class="add_cart" onclick="simpleCart.add('thumb=http://placehold.it/25x25','name=1', 'size=8.5 x 11','price=10.00','quantity=1');">Add to Cart</a><br />
+                  <div class="item_added" style="display:none">Item Added to Cart</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Print">
+            <div class="printImage ui-icon ui-icon-print" title="Print Image"></div>
+          </li>
+        </ul>
+        <p>1</p>
+      </div>
+    </div>
+    <div class="item Filter1 ui-corner-all"> <a   href="http://placehold.it/350x150" title="2"><img src="http://placehold.it/90x90" class="border custom" width="90" height="60" alt="2" /> </a>
+      <div class="titles">
+        <ul class="icon">
+          <li class="ui-state-default ui-corner-all" title="Select as Favorite">
+            <div class="fav ui-icon ui-icon-heart"></div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="More Info">
+            <div class="description ui-icon ui-icon-extlink">
+              <div class="description_holder" style="display:none">2<br />
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Add to Cart">
+            <div class="cart_button ui-icon ui-icon-cart">
+              <div class="cart_holder" style="display:none">
+                <div class="simpleCart_shelfItem"> <span class="item_thumb"><img src='http://placehold.it/25x25' height='25px' width='25px'/></span>
+                  <h5 class="item_name">2</h5>
+                  <br />
+                  <span class="item_size">8.5 x 11</span><br />
+                  <span class="item_price">10.00</span><br />
+                  <input type="text" class="item_quantity" value="1" />
+                  <a href="#" class="add_cart" onclick="simpleCart.add('thumb=http://placehold.it/25x25','name=2', 'size=8.5 x 11','price=10.00','quantity=1');">Add to Cart</a><br />
+                  <div class="item_added" style="display:none">Item Added to Cart</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Print">
+            <div class="printImage ui-icon ui-icon-print" title="Print Image"></div>
+          </li>
+        </ul>
+        <p>3</p>
+      </div>
+    </div>
+    <div class="item Filter1 ui-corner-all"> <a   href="http://placehold.it/350x150" title="Dancers"><img src="http://placehold.it/90x90" class="border custom" width="90" height="60" alt="3" /> </a>
+      <div class="titles">
+        <ul class="icon">
+          <li class="ui-state-default ui-corner-all" title="Select as Favorite">
+            <div class="fav ui-icon ui-icon-heart"></div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="More Info">
+            <div class="description ui-icon ui-icon-extlink">
+              <div class="description_holder" style="display:none">3<br />
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Add to Cart">
+            <div class="cart_button ui-icon ui-icon-cart">
+              <div class="cart_holder" style="display:none">
+                <div class="simpleCart_shelfItem"> <span class="item_thumb"><img src='http://placehold.it/25x25' height='25px' width='25px'/></span>
+                  <h5 class="item_name">3</h5>
+                  <br />
+                  <span class="item_size">8.5 x 11</span><br />
+                  <span class="item_price">10.00</span><br />
+                  <input type="text" class="item_quantity" value="1" />
+                  <a href="#" class="add_cart" onclick="simpleCart.add('thumb=http://placehold.it/25x25','name=3', 'size=8.5 x 11','price=10.00','quantity=1');">Add to Cart</a><br />
+                  <div class="item_added" style="display:none">Item Added to Cart</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Print">
+            <div class="printImage ui-icon ui-icon-print" title="Print Image"></div>
+          </li>
+        </ul>
+        <p>3</p>
+      </div>
+    </div>
+    <div class="item Filter1 ui-corner-all"> <a   href="http://placehold.it/350x150" title="4"><img src="http://placehold.it/90x90" class="border custom" width="90" height="60" alt="4" /> </a>
+      <div class="titles">
+        <ul class="icon">
+          <li class="ui-state-default ui-corner-all" title="Select as Favorite">
+            <div class="fav ui-icon ui-icon-heart"></div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="More Info">
+            <div class="description ui-icon ui-icon-extlink">
+              <div class="description_holder" style="display:none">4<br />
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Add to Cart">
+            <div class="cart_button ui-icon ui-icon-cart">
+              <div class="cart_holder" style="display:none">
+                <div class="simpleCart_shelfItem"> <span class="item_thumb"><img src='http://placehold.it/25x25' height='25px' width='25px'/></span>
+                  <h5 class="item_name">4</h5>
+                  <br />
+                  <span class="item_size">8.5 x 11</span><br />
+                  <span class="item_price">10.00</span><br />
+                  <input type="text" class="item_quantity" value="1" />
+                  <a href="#" class="add_cart" onclick="simpleCart.add('thumb=http://placehold.it/25x25','name=4', 'size=8.5 x 11','price=10.00','quantity=1');">Add to Cart</a><br />
+                  <div class="item_added" style="display:none">Item Added to Cart</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Print">
+            <div class="printImage ui-icon ui-icon-print" title="Print Image"></div>
+          </li>
+        </ul>
+        <p>4</p>
+      </div>
+    </div>
+    <div class="item Filter1 ui-corner-all"> <a   href="http://placehold.it/350x150" title="5"><img src="http://placehold.it/90x90" class="border custom" width="90" height="60" alt="5" /> </a>
+      <div class="titles">
+        <ul class="icon">
+          <li class="ui-state-default ui-corner-all" title="Select as Favorite">
+            <div class="fav ui-icon ui-icon-heart"></div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="More Info">
+            <div class="description ui-icon ui-icon-extlink">
+              <div class="description_holder" style="display:none">5<br />
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Add to Cart">
+            <div class="cart_button ui-icon ui-icon-cart">
+              <div class="cart_holder" style="display:none">
+                <div class="simpleCart_shelfItem"> <span class="item_thumb"><img src='http://placehold.it/25x25' height='25px' width='25px'/></span>
+                  <h5 class="item_name">5</h5>
+                  <br />
+                  <span class="item_size">8.5 x 11</span><br />
+                  <span class="item_price">10.00</span><br />
+                  <input type="text" class="item_quantity" value="1" />
+                  <a href="#" class="add_cart" onclick="simpleCart.add('thumb=http://placehold.it/25x25','name=5', 'size=8.5 x 11','price=10.00','quantity=1');">Add to Cart</a><br />
+                  <div class="item_added" style="display:none">Item Added to Cart</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Print">
+            <div class="printImage ui-icon ui-icon-print" title="Print Image"></div>
+          </li>
+        </ul>
+        <p>5</p>
+      </div>
+    </div>
+    
+    <div class="item Filter1 ui-corner-all"> <a   href="http://placehold.it/350x150" title="6"><img src="http://placehold.it/90x90" class="border custom" width="90" height="60" alt="6" /> </a>
+      <div class="titles">
+        <ul class="icon">
+          <li class="ui-state-default ui-corner-all" title="Select as Favorite">
+            <div class="fav ui-icon ui-icon-heart"></div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="More Info">
+            <div class="description ui-icon ui-icon-extlink">
+              <div class="description_holder" style="display:none">6<br />
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Add to Cart">
+            <div class="cart_button ui-icon ui-icon-cart">
+              <div class="cart_holder" style="display:none">
+                <div class="simpleCart_shelfItem"> <span class="item_thumb"><img src='http://placehold.it/25x25' height='25px' width='25px'/></span>
+                  <h5 class="item_name">6</h5>
+                  <br />
+                  <span class="item_size">8.5 x 11</span><br />
+                  <span class="item_price">10.00</span><br />
+                  <input type="text" class="item_quantity" value="1" />
+                  <a href="#" class="add_cart" onclick="simpleCart.add('thumb=http://placehold.it/25x25','name=6', 'size=8.5 x 11','price=10.00','quantity=1');">Add to Cart</a><br />
+                  <div class="item_added" style="display:none">Item Added to Cart</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Print">
+            <div class="printImage ui-icon ui-icon-print" title="Print Image"></div>
+          </li>
+        </ul>
+        <p>6</p>
+      </div>
+    </div>
+    <div id="index2" style="display:none">
+    <div class="item Filter1 ui-corner-all"> <a   href="http://placehold.it/350x150" title="6"><img src="http://placehold.it/90x90" class="border custom" width="90" height="60" alt="6" /> </a>
+      <div class="titles">
+        <ul class="icon">
+          <li class="ui-state-default ui-corner-all" title="Select as Favorite">
+            <div class="fav ui-icon ui-icon-heart"></div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="More Info">
+            <div class="description ui-icon ui-icon-extlink">
+              <div class="description_holder" style="display:none">6<br />
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Add to Cart">
+            <div class="cart_button ui-icon ui-icon-cart">
+              <div class="cart_holder" style="display:none">
+                <div class="simpleCart_shelfItem"> <span class="item_thumb"><img src='http://placehold.it/25x25' height='25px' width='25px'/></span>
+                  <h5 class="item_name">6</h5>
+                  <br />
+                  <span class="item_size">8.5 x 11</span><br />
+                  <span class="item_price">10.00</span><br />
+                  <input type="text" class="item_quantity" value="1" />
+                  <a href="#" class="add_cart" onclick="simpleCart.add('thumb=http://placehold.it/25x25','name=6', 'size=8.5 x 11','price=10.00','quantity=1');">Add to Cart</a><br />
+                  <div class="item_added" style="display:none">Item Added to Cart</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="ui-state-default ui-corner-all" title="Print">
+            <div class="printImage ui-icon ui-icon-print" title="Print Image"></div>
+          </li>
+        </ul>
+        <p>6</p>
+      </div>
+    </div>
+ 
+</div>
+  </div>
+</div>
+
+
+<div id="cart" class="ui-widget-content ui-corner-all" style="display:none"> 
+  <!--Add a div with the class of simpleCart_items to display what is in the user's cart-->
+  <div class="simpleCart_items"></div>
+  <!--use a class of simpleCart_empty to empty the cart and simpleCart_checkout to checkout -->
+  <div id="cartTotal"> SubTotal: <span class="simpleCart_total"></span> <br />
+    Tax: <span class="simpleCart_taxCost"></span> <br />
+    Shipping: <span class="simpleCart_shippingCost"></span> <br />
+    -----------------------------<br />
+    <strong>Total: </strong><span class="simpleCart_total"></span> </div>
+  <a href="javascript:;" class="simpleCart_empty fg-button ui-state-default ui-corner-all">Empty Cart</a> <a href="javascript:;" class="simpleCart_checkout fg-button ui-state-default fg-button-icon-right ui-corner-all"><span class="ui-icon ui-icon-triangle-1-e"></span>Checkout</a> </div>
+</body>
+</html>
